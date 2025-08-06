@@ -4,6 +4,7 @@ import Imagens from "./imagens.jsx";
 
 function Garagem() {
   const carros = ["Nivus","Onix","Prisma","Corsa","HB20","Corrolla","Fiat" ];
+  const ano = [2020, 2021, 2022, 2023, 2024];
   return (
     <div>
       <h1>Os carros que estão na minha Garagem: </h1>
@@ -12,6 +13,7 @@ function Garagem() {
             <div>
                 <Carros marca={carro} />
                 <Imagens/>
+                <p>Ano: {ano[Math.floor(Math.random() * ano.length)]}</p>
             </div>
         ))}
       </ul>
